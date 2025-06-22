@@ -6,7 +6,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 
 const app = express();
-const FRONTEND_URL = 'http://localhost:3000';
+const FRONTEND_URL = 'https://postf-front.onrender.com';
 // Middleware
 app.use(helmet()); // Security headers
 app.use(cors({
