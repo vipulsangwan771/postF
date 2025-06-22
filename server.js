@@ -6,11 +6,11 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 
 const app = express();
-
+const FRONTEND_URL = 'http://localhost:3000';
 // Middleware
 app.use(helmet()); // Security headers
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: FRONTEND_URL || 'http://localhost:3000',
   methods: ['GET', 'POST'],
   credentials: true
 }));
